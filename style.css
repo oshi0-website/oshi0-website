@@ -9,9 +9,6 @@
   opacity: 0.5;
   background-color: black;
   overflow-x: hidden;
-
-  
-
 }
 
 .sideMenu a {
@@ -42,4 +39,10 @@
     bottom: 15px;
     right: 8px;
   }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+      }
 
