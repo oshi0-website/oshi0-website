@@ -8,11 +8,12 @@ Current updates:
 - Inspections done; page design for pages being brainstormed
 - Additional mockups to be created over the weekend and eventually implemented
 - Additional mockups for the following in progress:
--   About Page
--   Worship Page
--   Contact Page
--   Calendar (COMPLETED)
--   Links to social media
+  -   About Page
+  -   Worship Page
+  -   Contact Page
+  -   Calendar (COMPLETED)
+  -   Links to social media
+  -   Location
 
 Plans:
 - Continue edits on the front page
