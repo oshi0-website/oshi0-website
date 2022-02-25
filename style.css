@@ -8,6 +8,7 @@
   background-color: transparent;
   overflow-x: hidden;
   padding-top: 20px;
+
   
 
 }
@@ -19,6 +20,7 @@
     color: #818181;
     display: block;
     transition: 0.3s;
+    text-align: center;
 }
 
 .sideMenu a:hover {
