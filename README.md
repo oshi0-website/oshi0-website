@@ -7,6 +7,12 @@ Current updates:
 - Mockup for Home Page in progress. This will serve as a template for the other pages as well.
 - Inspections done; page design for pages being brainstormed
 - Additional mockups to be created over the weekend and eventually implemented
+- Additional mockups for the following in progress:
+-   About Page
+-   Worship Page
+-   Contact Page
+-   Calendar (COMPLETED)
+-   Links to social media
 
 Plans:
 - Continue edits on the front page
