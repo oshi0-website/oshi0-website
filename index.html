@@ -16,14 +16,16 @@
         <script src = "menu.js"></script>
     <script src="semantic/dist/semantic.min.js"></script>
 </head>
+
 <style>
     body {
-        background: url("image/home-page.JPG") no-repeat center center fixed;
+        background-color: ;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
+
 
     .title {
         height: 10em;
@@ -33,7 +35,7 @@
         
     }
 
-    .title h1 {
+     .title h1 {
         margin: 0;
         color: white;
         position: fixed;
@@ -44,11 +46,44 @@
         background-color: black;
         opacity: 0.75;
     }
+	
+	.video-hero	{
+		width: 100%; 
+		height: 100vh; 
+		display: flex; 
+		flex-wrap: wrap; 
+		align-items: center; 
+		position: fixed;
+		.video-bg{ 
+			width: 100%; 
+			height: 100%; 
+			position: absolute; 
+			left: 0; 
+			top: 0; 
+			overflow: hidden; 
+			background: $color-dark;
+			background-size: cover;
+			video { 
+				min-width: 100%; 
+				min-height: 100%; 
+				position: absolute; 
+				left: 50%; 
+				top: 50%; 
+				transform: 
+				translate(-50%, -50%); 
+				opacity: 0.6;}
+			}
+	.inner{width: 100%; display: block; text-align: center; position: relative; z-index: 2;
+		span{width: 100%; float: left; font-size: 8vw; line-height: 5vw; font-weight: 800; color: #fff; margin-bottom: 30px; }
+		a{font-size: 19px; color: #fff; @include second-font; padding-bottom: 5px; position: relative; border-bottom: 2px solid #fff; padding-bottom: 4px;
+			&:hover{text-decoration: none; color: $color-main;}}}}
 
 
 </style>
 
+
 <body>
+
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">HOME</a>
@@ -65,6 +100,14 @@
       </div>
       <br/>
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+	 <header class="video-hero">
+        <div class="video-bg"> <video src="videos/video02.mp4" autoplay="autoplay"
+
+            muted="muted" loop=""></video> </div>
+        <!-- end video-bg -->
+	</header>
+
       
     <!--<div class="sideMenu">
         <a href="index.html">HOME</a>
@@ -86,10 +129,10 @@
             OSHi, Aiea <br/>
 			<br/>
             
-            <!--Insert your up-to-date mass here--->
+            <!--Insert your up-to-date mass here-->
             <iframe title="vimeo-player" src="https://player.vimeo.com/video/681715916?h=64b8c9d7f5" width="640" height="360" frameborder="0" allowfullscreen></iframe>
             <br/>
-			<!-- End insert --->
+			<!-- End insert -->
             
 			In person masses every Sunday at: <br/>
             8&colon;15 AM&comma; 9&colon;45 AM&comma; and 10&colon;45 AM<br/>
