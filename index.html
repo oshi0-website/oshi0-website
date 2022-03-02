@@ -8,12 +8,12 @@
         content="Lutheran, LCMS, Hawaii, Aiea, Sermons, Ministry, Jesus, God, Aloha, Akua, Bible, Bible Study, Gowen, McGowan, PastorMitch">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src = "menu.js"></script>
+    <script src="js/menu.js"></script>
     <script src="semantic/dist/semantic.min.js"></script>
 </head>
 
@@ -32,10 +32,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
     }
 
-     .title h1 {
+    .title h1 {
         margin: 0;
         color: white;
         position: fixed;
@@ -46,39 +46,71 @@
         background-color: black;
         opacity: 0.75;
     }
-	
-	.video-hero	{
-		width: 100%; 
-		height: 100vh; 
-		display: flex; 
-		flex-wrap: wrap; 
-		align-items: center; 
-		position: fixed;
-		.video-bg{ 
-			width: 100%; 
-			height: 100%; 
-			position: absolute; 
-			left: 0; 
-			top: 0; 
-			overflow: hidden; 
-			background: $color-dark;
-			background-size: cover;
-			video { 
-				min-width: 100%; 
-				min-height: 100%; 
-				position: absolute; 
-				left: 50%; 
-				top: 50%; 
-				transform: 
-				translate(-50%, -50%); 
-				opacity: 0.6;}
-			}
-	.inner{width: 100%; display: block; text-align: center; position: relative; z-index: 2;
-		span{width: 100%; float: left; font-size: 8vw; line-height: 5vw; font-weight: 800; color: #fff; margin-bottom: 30px; }
-		a{font-size: 19px; color: #fff; @include second-font; padding-bottom: 5px; position: relative; border-bottom: 2px solid #fff; padding-bottom: 4px;
-			&:hover{text-decoration: none; color: $color-main;}}}}
 
+    .video-hero {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: fixed;
+    }
 
+    .video-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        background: $color-dark;
+        background-size: cover;
+    }
+
+    video {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:
+            translate(-50%, -50%);
+        opacity: 0.6;
+    }
+    }
+
+    .inner {
+        width: 100%;
+        display: block;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    span {
+        width: 100%;
+        float: left;
+        font-size: 8vw;
+        line-height: 5vw;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    a {
+        font-size: 19px;
+        color: #fff;
+        @include second-font;
+        padding-bottom: 5px;
+        position: relative;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 4px;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $color-main;
+    }
 </style>
 
 
@@ -88,7 +120,8 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">HOME</a>
         <a href="worship.html">WORSHIP</a>
-        <a href="https://www.calendarwiz.com/calendars/calendar.php?crd=oshi&cid%5B%5D=205099%20&PHPSESSID=d54cb7c158b7040f9e6308b099a61d98&jsenabled=1&winh=937&winw=1920&inifr=false">CALENDAR</a>
+        <a
+            href="https://www.calendarwiz.com/calendars/calendar.php?crd=oshi&cid%5B%5D=205099%20&PHPSESSID=d54cb7c158b7040f9e6308b099a61d98&jsenabled=1&winh=937&winw=1920&inifr=false">CALENDAR</a>
         <a href="events.html">EVENTS</a>
         <a href="about.html">ABOUT US</a>
         <a href="contact.html">CONTACTS</a>
@@ -97,46 +130,31 @@
             <a href="https://www.facebook.com/mitchell.gowen.5" class="fa fa-facebook"></a>
             <a href="https://vimeo.com/oshiaiea" class="fa fa-vimeo"></a>
         </div>
-      </div>
-      <br/>
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <br />
 
-	 <header class="video-hero">
-        <div class="video-bg"> <video src="videos/video02.mp4" autoplay="autoplay"
 
-            muted="muted" loop=""></video> </div>
+    <header class="video-hero">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="video-bg"> <video src="videos/video02.mp4" autoplay="autoplay" muted="muted" loop=""></video> </div>
         <!-- end video-bg -->
-	</header>
+    </header>
 
-      
-    <!--<div class="sideMenu">
-        <a href="index.html">HOME</a>
-        <a href="worship.html">WORSHIP</a>
-        <a href="https://www.calendarwiz.com/calendars/calendar.php?crd=oshi&cid%5B%5D=205099%20&PHPSESSID=d54cb7c158b7040f9e6308b099a61d98&jsenabled=1&winh=937&winw=1920&inifr=false">CALENDAR</a>
-        <a href="events.html">EVENTS</a>
-        <a href="about.html">ABOUT US</a>
-        <a href="contact.html">CONTACTS</a>
-        <a href="location.html">HOW TO GET HERE</a>
-        <div class="socialMedia">
-            <a href="https://www.facebook.com/mitchell.gowen.5" class="fa fa-facebook"></a>
-            <a href="https://vimeo.com/oshiaiea" class="fa fa-vimeo"></a>
-        </div>
-    </div>-->
 
     <div class="title" style="text-align: center">
-        <h1>OUR SAVIOR LUTHERAN CHURCH <br/>
-            Stay Healthy Love Jesus Be the Community of Faith <br/>
-            OSHi, Aiea <br/>
-			<br/>
-            
+        <h1>OUR SAVIOR LUTHERAN CHURCH <br />
+            Stay Healthy Love Jesus Be the Community of Faith <br />
+            OSHi, Aiea <br />
+            <br />
+
             <!--Insert your up-to-date mass here-->
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/681715916?h=64b8c9d7f5" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-            <br/>
-			<!-- End insert -->
-            
-			In person masses every Sunday at: <br/>
-            8&colon;15 AM&comma; 9&colon;45 AM&comma; and 10&colon;45 AM<br/>
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/681715916?h=64b8c9d7f5" width="640"
+                height="360" frameborder="0" allowfullscreen></iframe>
+            <br />
+            <!-- End insert -->
+
+            In person masses every Sunday at: <br />
+            8&colon;15 AM&comma; 9&colon;45 AM&comma; and 10&colon;45 AM<br />
         </h1>
     </div>
 </body>
-
