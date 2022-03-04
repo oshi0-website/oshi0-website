@@ -15,6 +15,11 @@
     <script src="semantic/dist/semantic.min.js"></script>
 </head>
 <style>
+
+ * {
+	box-sizing: border-box;
+	}
+	
     body {
         background: url("image/church.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -26,7 +31,7 @@
 	.card {
 	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 	  transition: 0.3s;
-	  width: 15%;
+	  width: 30%;
 	  padding: 1em;
 	  background-color: black;
 	  color: white;
@@ -41,6 +46,17 @@
 	
 	.container {
 	  padding: 2px 2px;
+	}
+	
+	.column {
+	  float: left;
+	  width: 50%;
+	}
+	
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 	
 </style>
@@ -58,16 +74,54 @@
             <a href="https://vimeo.com/oshiaiea" class="fa fa-vimeo"></a>
         </div>
 	</div>
-		
-	<div class="card">
-		<div class="container" item-align="center">
-			<img src="image/gowen.jpg" alt="Avatar">
-			<b><a href="mailto:pastor@oursaviorhawaii.com" target="_blank">Senior Pastor: Mitchell W. Gowen</a></b>
-			<p>Pastor Mitch is a graduate of Concordia Teachers
-			College in Seward, NE and Concordia Theological
-			Seminary in Ft. Wayne and joined us 1990.</p>
+	
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/gowen.jpg" alt="Avatar" style="width: 90%">
+					<b><a href="mailto:pastor@oursaviorhawaii.com" target="_blank">Senior Pastor: Mitchell W. Gowen</a></b>
+					<p>Pastor Mitch is a graduate of Concordia Teachers
+					College in Seward, NE and Concordia Theological
+					Seminary in Ft. Wayne and joined us 1990.</p>
+					</div>
+				</div>
 		</div>
-    </div>
+		
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/clarence.jpg" alt="Avatar"  style="width: 90%">
+					<b><a href="mailto:principal@oursaviorhawaii.com" target="_blank">Interim Principal: Clarence DeLude</a></b>
+					<p>Clarence joined us in 2019. He is our interim
+					principal and a vicar inthe Cross Cultural Ministry
+					program at Concordia University Irvine.</p>
+					</div>
+				</div>
+		</div>
+		
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/Kayla.jpg" alt="Avatar"  style="width: 90%">
+					<b><a href="https://www.facebook.com/kayla.lohman.9">Director of Christian Education (DCE): Kayla (Lohman) McGowan</a></b>
+					<p>Kayla is a graduate of Concordia University Chicago and joined us
+					in 2015. She is responsible for the ministry to children, junior high,
+					senior high, college, and young adults.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/Gerry.jpg" alt="Avatar"  style="width: 100%">
+					<b><a href="mailto:office@oursaviorhawaii.com" target="_blank">Administrative Assistant: Gerry Reese</a></b>
+					<p>Gerry handles all things administrative and much more!  She joined us in 2005.</p>
+					</div>
+				</div>
+		</div>
+	</div>
 	
 
 </body>
