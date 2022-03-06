@@ -27,6 +27,9 @@
         -o-background-size: cover;
         background-size: cover;
     }
+    .iframe {
+        height: 360;
+    }
 
 
     .title {
@@ -62,23 +65,39 @@
         z-index: -1;
     }
 
-    .content {
-        position: fixed;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
-        width: 100%;
-        padding: 20px;
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        #videoBack {
+            display: none;
+        }
+
+        body {
+            background-image: url("image/worship.JPG");
+            min-height: 100%;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-color: #cccccc;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .title {
+            height: 50%;
+            width: 50%;
+        }
+
+        .title h1 {
+            font-size: 14px;
+        }
+        .iframe {
+            height: 25%; 
+        }
+
+
+
     }
-
-    @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-}
 </style>
 
 
@@ -86,7 +105,8 @@
     <video autoplay muted loop id="videoBack">
         <source src="videos/video02.mp4" autoplay="autoplay" type="video/mp4" muted="muted" loop="">
     </video>
-    <span style="font-size:30px;cursor:pointer; z-index: 4; color: black;" onclick="openNav()">&#9776;</span>
+    <span class="menu" style="font-size:30px;cursor:pointer; z-index: 4; color: black;"
+        onclick="openNav()">&#9776;</span>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">HOME</a>
@@ -102,23 +122,24 @@
             <a href="https://vimeo.com/oshiaiea" class="fa fa-vimeo"></a>
         </div>
     </div>
-    <div class = "title">
-        <h1>OUR SAVIOR LUTHERAN CHURCH <br/>
-            Stay Healthy Love Jesus Be the Community of Faith <br/>
-            OSHi, Aiea 
-              <!--Insert your up-to-date mass here-->
-              <div style = "text-align: center;">
-              <iframe title="vimeo-player" src="https://player.vimeo.com/video/681715916?h=64b8c9d7f5" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-              <br/>
+    <div class="title">
+        <h1>OUR SAVIOR LUTHERAN CHURCH <br />
+            Stay Healthy Love Jesus Be the Community of Faith <br />
+            OSHi, Aiea
+            <!--Insert your up-to-date mass here-->
+            <div style="text-align: center;">
+                <iframe class = "responsive-iframe" title="vimeo-player" src="https://player.vimeo.com/video/681715916?h=64b8c9d7f5" width="640"
+                     frameborder="0" allowfullscreen></iframe>
+                <br />
             </div>
-              <!-- End insert -->
-              
-              In person masses every Sunday at: <br/>
-              8&colon;15 AM&comma; 9&colon;45 AM&comma; and 10&colon;45 AM<br/>
+            <!-- End insert -->
+
+            In person masses every Sunday at: <br />
+            8&colon;15 AM&comma; 9&colon;45 AM&comma; and 10&colon;45 AM<br />
         </h1>
     </div>
-       
-    
+
+
     <br />
 
 
