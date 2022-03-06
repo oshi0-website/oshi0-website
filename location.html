@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <style>
     body {
@@ -62,19 +63,22 @@
 </style>
 
 <body>
-    <div class="sideMenu">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">HOME</a>
         <a href="worship.html">WORSHIP</a>
-        <a href="https://www.calendarwiz.com/calendars/calendar.php?crd=oshi&cid%5B%5D=205099%20&PHPSESSID=d54cb7c158b7040f9e6308b099a61d98&jsenabled=1&winh=937&winw=1920&inifr=false">CALENDAR</a>
+        <a
+            href="https://www.calendarwiz.com/calendars/calendar.php?crd=oshi&cid%5B%5D=205099%20&PHPSESSID=d54cb7c158b7040f9e6308b099a61d98&jsenabled=1&winh=937&winw=1920&inifr=false">CALENDAR</a>
         <a href="events.html">EVENTS</a>
         <a href="about.html">ABOUT US</a>
         <a href="contact.html">CONTACTS</a>
         <a href="location.html">HOW TO GET HERE</a>
-        <div class="socialMedia">
+        <div class="socialMediaButton">
             <a href="https://www.facebook.com/mitchell.gowen.5" class="fa fa-facebook"></a>
             <a href="https://vimeo.com/oshiaiea" class="fa fa-vimeo"></a>
         </div>
     </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     <div class="title" style="text-align: center">
         <h1>How To Get Here <br/>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1313.5092401428262!2d-157.93724438116345!3d21.38340042971318!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006f4ce44df291%3A0x9128db98f5f8493b!2sOur%20Savior%20Lutheran%20Church!5e0!3m2!1sen!2sus!4v1645790044616!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <br/>
@@ -92,3 +96,4 @@
 
 
 </body>
+<script src = "js/menu.js"></script>
