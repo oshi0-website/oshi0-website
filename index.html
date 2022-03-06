@@ -34,6 +34,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
 
     }
 
@@ -68,15 +71,13 @@
         padding: 20px;
     }
 
-    @media only screen and (max-width: 600px) {
-        #videoBack {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-    }
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
 }
 </style>
 
