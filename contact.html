@@ -8,15 +8,20 @@
         content="Lutheran, LCMS, Hawaii, Aiea, Sermons, Ministry, Jesus, God, Aloha, Akua, Bible, Bible Study, Gowen, McGowan, PastorMitch">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src = "menu.js"></script>
     <script src="semantic/dist/semantic.min.js"></script>
-    
 </head>
 <style>
+
+ * {
+	box-sizing: border-box;
+	}
+	
     body {
         background: url("image/church.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -24,15 +29,52 @@
         -o-background-size: cover;
         background-size: cover;
     }
+	
+	.card {
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+	  width: 78%;
+	  padding: 1em;
+	  background-color: black;
+	  color: white;
+	  margin-left: 250px;
+	  border-radius: 10px 10px 10px 10px;
+	  text-align: center;
+	  height: 300px;
+	  font-size: 20px;
+	}
+
+	.card a {
+		text-decoration: none;
+		color: white;
+	}
+	
+	.container {
+	  padding: 1px 1px;
+	}
+	
+	.column {
+	  float: left;
+	  width: 30%;
+	  padding: 0 10px;
+	}
+		
+	.row {
+		margin: 0 -5px;
+	}
+		
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
 </style>
 <body>
-    
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">HOME</a>
         <a href="worship.html">WORSHIP</a>
-        <a
-            href="https://www.calendarwiz.com/calendars/calendar.php?crd=oshi&cid%5B%5D=205099%20&PHPSESSID=d54cb7c158b7040f9e6308b099a61d98&jsenabled=1&winh=937&winw=1920&inifr=false">CALENDAR</a>
+        <a href="https://www.calendarwiz.com/calendars/calendar.php?crd=oshi&cid%5B%5D=205099%20&PHPSESSID=d54cb7c158b7040f9e6308b099a61d98&jsenabled=1&winh=937&winw=1920&inifr=false">CALENDAR</a>
         <a href="events.html">EVENTS</a>
         <a href="about.html">ABOUT US</a>
         <a href="contact.html">CONTACTS</a>
@@ -41,7 +83,94 @@
             <a href="https://www.facebook.com/mitchell.gowen.5" class="fa fa-facebook"></a>
             <a href="https://vimeo.com/oshiaiea" class="fa fa-vimeo"></a>
         </div>
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <br/>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/gowen.jpg" alt="Avatar" style="height: 100px; width: 100px;">
+					</br>
+					<b><a href="mailto:pastor@oursaviorhawaii.com" target="_blank">Senior Pastor: Mitchell W. Gowen</a></b>
+					<p>Pastor Mitch is a graduate of Concordia Teachers
+					College in Seward, NE and Concordia Theological
+					Seminary in Ft. Wayne and joined us 1990.</p>
+					</div>
+				</div>
+		</div>
+		
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/clarence.jpg" alt="Avatar"  style="height: 100px; width: 100px;">
+					</br>
+					<b><a href="mailto:principal@oursaviorhawaii.com" target="_blank">Interim Principal: Clarence DeLude</a></b>
+					<p>Clarence joined us in 2019. He is our interim
+					principal and a vicar inthe Cross Cultural Ministry
+					program at Concordia University Irvine.</p>
+					</div>
+				</div>
+		</div>
+		
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/Kayla.jpg" alt="Avatar"  style="height: 100px; width: 100px;">
+					</br>
+					<b><a href="https://www.facebook.com/kayla.lohman.9">Director of Christian Education (DCE): Kayla (Lohman) McGowan</a></b>
+					<p>Kayla is a graduate of Concordia University Chicago and joined us
+					in 2015. She is responsible for the ministry to children, junior high,
+					senior high, college, and young adults.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	</br>
+		
+		
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/gowen.jpg" alt="Avatar" style="height: 100px; width: 100px;">
+					</br>
+					<b><a href="mailto:pastor@oursaviorhawaii.com" target="_blank">Senior Pastor: Mitchell W. Gowen</a></b>
+					<p>Pastor Mitch is a graduate of Concordia Teachers
+					College in Seward, NE and Concordia Theological
+					Seminary in Ft. Wayne and joined us 1990.</p>
+					</div>
+				</div>
+		</div>
+		
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/clarence.jpg" alt="Avatar"  style="height: 100px; width: 100px;">
+					</br>
+					<b><a href="mailto:principal@oursaviorhawaii.com" target="_blank">Interim Principal: Clarence DeLude</a></b>
+					<p>Clarence joined us in 2019. He is our interim
+					principal and a vicar inthe Cross Cultural Ministry
+					program at Concordia University Irvine.</p>
+					</div>
+				</div>
+		</div>
+		
+		<div class="column">
+			<div class="card">
+				<div class="container" item-align="center">
+					<img src="image/Kayla.jpg" alt="Avatar"  style="height: 100px; width: 100px;">
+					</br>
+					<b><a href="https://www.facebook.com/kayla.lohman.9">Director of Christian Education (DCE): Kayla (Lohman) McGowan</a></b>
+					<p>Kayla is a graduate of Concordia University Chicago and joined us
+					in 2015. She is responsible for the ministry to children, junior high,
+					senior high, college, and young adults.</p>
+				</div>
+			</div>
+		</div>
+		
+		</div>		
+
 </body>
-<script src = "js/menu.js"></script>
