@@ -16,6 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="menu.js"></script>
+	<script src="worshipDropdown.js"></script>
     <script src="semantic/dist/semantic.min.js"></script>
 </head>
 
@@ -55,6 +56,32 @@
         background-color: black;
         opacity: 0.75;
     }
+	
+	.dropdown {
+		  display: inline-block;
+		  position: relative;
+		}
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		}
+		
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		  width: 200px;
+		  background-color: black;
+		  color: white;
+		}
+		.dropdown-content a {
+		  display: block;
+		  color: white;
+		  padding: 5px;
+		  text-decoration: none;
+		}
+		.dropdown-content a:hover {
+		  color: #FFFFFF;
+		  background-color: #00A4BD;
+		}
 
     #videoBack {
         position: fixed;
@@ -64,6 +91,7 @@
         min-height: 100%;
         z-index: -1;
     }
+	
 
 
     /* Smartphones (portrait and landscape) ----------- */
@@ -100,6 +128,7 @@
 
 
 <body>
+
     <video autoplay muted loop id="videoBack">
         <source src="videos/video02.mp4" autoplay="autoplay" type="video/mp4" muted="muted" loop="">
     </video>
@@ -108,7 +137,15 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">HOME</a>
-        <a href="worship.html">WORSHIP</a>
+		<div class="dropdown">
+			<a>WORSHIP</a>
+			<i class="fa fa-caret-right" style="color: white;"></i>
+				<div class="dropdown-content" style="position: fixed; left: 145px; top: 110px;">
+					<a href="worship.html">ONLINE WORSHIP</a>
+					<a href="worship.html">CHURCHES</a>
+					<a href="worship.html">LUTHERAN SCHOOL</a>
+				</div>
+			</div>
         <a href="https://www.calendarwiz.com/calendars/calendar.php?crd=oshi&cid%5B%5D=205099%20&PHPSESSID=d54cb7c158b7040f9e6308b099a61d98&jsenabled=1&winh=937&winw=1920&inifr=false">CALENDAR</a>
         <a href="events.html">EVENTS</a>
         <a href="about.html">ABOUT US</a>
