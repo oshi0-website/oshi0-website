@@ -32,6 +32,33 @@
     margin-left: 50px;
   }
   
+  .sidenav .dropdown {
+		  display: inline-block;
+		  position: relative;
+		}
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		}
+		
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		  width: 200px;
+		  background-color: #111;
+		  color: white;
+		  margin-left: 21px;
+		}
+		.dropdown-content a {
+		  display: block;
+		  color: white;
+		  padding: 5px;
+		  text-decoration: none;
+		}
+		.dropdown-content a:hover {
+		  color: #FFFFFF;
+		  background-color: #00A4BD;
+		}
+  
   #main {
     transition: margin-left .5s;
     padding: 16px;
