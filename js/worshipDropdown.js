@@ -1,9 +1,17 @@
 function toggleMenu() {
-  var menuBox = document.getElementById('menu-box');    
-  if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
-	menuBox.style.display = "none";
-  }
-  else { // if is menuBox hidden, display it
-	menuBox.style.display = "block";
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
   }
 }
