@@ -40,7 +40,7 @@
 	  margin-left: 250px;
 	  border-radius: 10px 10px 10px 10px;
 	  text-align: center;
-	  height: 300px;
+	  height: auto;
 	  font-size: 20px;
 	}
 
@@ -67,6 +67,16 @@
 		content: "";
 		display: table;
 		clear: both;
+	}
+
+	.lutheranTitle {
+		background-color: black;
+	}
+	/* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.column {
+		width: 100%;
+	}
 	}
 	
 </style>
@@ -177,8 +187,12 @@
 				</div>
 			</div>
 		</div>
+		</div>
 		
-		</div>		
+		<div class = "lutheranTitle">
+			<h2 style="color: white;text-align: center;">LUTHERAN CHURCHES IN HAWAII</h2>
+		</div>
+		
 
 </body>
 <script src="js/menu.js"></script>
