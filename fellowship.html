@@ -6,93 +6,48 @@
     <meta name="description" content="OSHi, Aiea">
     <meta name="keywords"
         content="Lutheran, LCMS, Hawaii, Aiea, Sermons, Ministry, Jesus, God, Aloha, Akua, Bible, Bible Study, Gowen, McGowan, PastorMitch">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
-	<link rel="stylesheet" href="css/menu.css">
 </head>
+
 <style>
-
- * {
-	box-sizing: border-box;
-	}
-	
-	.button {
-	  font-family: "Times New Roman";
-	  background-color: white; /* Green */
-	  border: 2px solid white;
-	  border-radius: 15px;
-	  color: black;
-	  padding: 16px 32px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	  margin: 4px 2px;
-	  transition-duration: 0.4s;
-	  cursor: pointer;
-	  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
-	}
-	
-	.button:hover {
-		background-color: black;
-		color: white;
-	}
-	
     body {
-        background: url("image/worship.JPG") no-repeat center center fixed;
+        background: url("image/church.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
     }
-	
-	.church-content {
-		item-align: center; 
-		margin-left: 400px;
-		
-	}
-	
-	.column {
-	  float: left;
-	  width: 50%;
-	  padding: 10px;
-	}
+    
+        .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+		align-content: center;
 
+        
+    }
 
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	
-	.card {
-	  width: 470px;
-	  padding: 1em;
-	  background-color: black;
-	  color: white;
-	  text-align: center;
-	  height: 271px;
-	  font-size: 17px;
-	  margin-left: -275px;
-	  margin-top: 18px;
-	}
-
-	.card a {
-		text-decoration: none;
+    .title h1 {
+		width: 800px;
+		font-size: 20px;
+		margin: 0;
 		color: white;
-	}
-	
-	
-	
+		background-color: black;
+		opacity: 0.90;
+		align-content: center
+		padding: 1em;
+    }
+    
 </style>
-
 <body>
+    
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">HOME</a>
@@ -125,98 +80,36 @@
             <a href="https://vimeo.com/oshiaiea" target="_blank" class="fa fa-vimeo"></a>
         </div>
     </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<div id = "main">
+		<div class = "title" style = "text-align: center">
+			<h1>FELLOWSHIP<hr/>
+			<image src="image/BeachBBQ.jpg" style="width:75%; height:75%; justify-content: center;"></image>
+			</br>
+			Around Memorial Day and Labor Day, we head to the beach for a day of fun, fellowship, and some great BBQ. Keep an eye out for the next one!
+			</br>
+			</br>
+			<image src="image/honolulu-city-lights.jpg" style="width:75%; height:75%; justify-content: center;"></image>
+			</br>
+			</br>
+			Every other year or so, we rent some double decker buses and Spaghetti Factory and head into Honolulu to see the Christmas lights.
+			</br>
+			</br>
+			<image src="image/gallery_thumb_1.jpg" style="width:75%; height:75%; justify-content: center;"></image>
+			</br>
+			</br>
+			And don't forget all the choirs (Concordia Bronxville, Concordia Irvine, Concordia Portland, St. Peter's, Brisbane, Australia), Rob the Donut Man, Skit Guys and others. God is good and we like to celebrate His goodness.  Watch the latest announcements to find out where we're going next!  And if you have some ideas - we'd love to hear them!
+			</br>
+			</br>
+			If you want more information, contact:
+			<a href="mailto:aloha@oursaviorhawaii.com"><b>aloha@oursaviorhawaii.com</b></a>
+			</h1>
 
-	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-	<div class  = "church-content">
-	
-
-	<div class="grid">
-	<div class="row">
-	  <div class="column">
-			<br/>
-            
-            <!--Insert your up-to-date mass here-->
-            <image src="image/LSB.JPG"></image>
-			<!-- End insert -->
-            
-	  </div>
-	  <div class="column">
-		<div class="card">
-			<div class="container" item-align="center">
-				<b>8:15am  Kupuna Service</b>
-				<p>Priority given to our Kupuna (those 60 and over and those
-				who are medium risk because of health or other issues). Modified Divine Service with one
-				hymn (CDC recomendations). Red Box Communion is celebrated on the 2nd and 4th
-				Sundays.  The Mayor's Emergency Declaration requires you to let us know you are coming so
-				we can prepare your Red Box according to CDC guidelines. Please let us know before
-				Saturday by e-mailing:
-				</p>
-				
-				<a href="mailto:aloha@oursaviorhawaii.com"><b>aloha@oursaviorhawaii.com</b></a>
-				</div>
-			</div>
-	  </div>
-	</div>
-	
-	<div class="row">
-	  <div class="column">
-			<br/>
-            
-            <!--Image banners go here-->
-            <image src="image/unsung.JPG" style="height: 270px; width: 470px;"></image>
-			<!-- End insert -->
-            
-	  </div>
-	  <div class="column">
-		<div class="card">
-			<div class="container" item-align="center">
-				<b>8:15am  Kupuna Service</b>
-				<p>Priority given to our Kupuna (those 60 and over and those
-				who are medium risk because of health or other issues). Modified Divine Service with one
-				hymn (CDC recomendations). Red Box Communion is celebrated on the 2nd and 4th
-				Sundays.  The Mayor's Emergency Declaration requires you to let us know you are coming so
-				we can prepare your Red Box according to CDC guidelines. Please let us know before
-				Saturday by e-mailing:
-				</p>
-				
-				<a href="mailto:aloha@oursaviorhawaii.com"><b>aloha@oursaviorhawaii.com</b></a>
-				</div>
-			</div>
-	  </div>
-	  </div>
-	  
-	  	<div class="row">
-	  <div class="column">
-			<br/>
-            
-            <!--Insert your up-to-date mass here-->
-            <image src="image/contemporary.JPG" style="height: 270px; width: 470px;"></image>
-			<!-- End insert -->
-            
-	  </div>
-	  <div class="column">
-		<div class="card">
-			<div class="container" item-align="center">
-				<b>8:15am  Kupuna Service</b>
-				<p>Priority given to our Kupuna (those 60 and over and those
-				who are medium risk because of health or other issues). Modified Divine Service with one
-				hymn (CDC recomendations). Red Box Communion is celebrated on the 2nd and 4th
-				Sundays.  The Mayor's Emergency Declaration requires you to let us know you are coming so
-				we can prepare your Red Box according to CDC guidelines. Please let us know before
-				Saturday by e-mailing:
-				</p>
-				
-				<a href="mailto:aloha@oursaviorhawaii.com"><b>aloha@oursaviorhawaii.com</b></a>
-				</div>
-			</div>
-	  </div>
-	</div>
-	</div>
-	</div>
-	</div>
+		</div>
 
 
+	</div>
+
+    
 </body>
 <script src = "js/menu.js"></script>
-</html>
-
