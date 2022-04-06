@@ -44,6 +44,7 @@
 	  text-align: center;
 	  height: 450px;
 	  font-size: 17px;
+	  opacity: 0.90;
 
 	}
 
@@ -51,6 +52,24 @@
 		text-decoration: none;
 		color: white;
 	}
+	
+	.title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+		align-content: center;
+        
+    }
+
+    .title h1, .title p {
+		width: 1000px;
+		font-size: 25px;
+		margin: 0;
+		color: white;
+		background-color: black;
+		opacity: 0.75;
+		align-content: center;
+    }
 	
 	.container {
 	  padding: 1px 1px;
@@ -108,7 +127,38 @@
     </div>
       <br/>
       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	  
+	<div class = "container">
+	<div class = "title" style = "text-align: center">
+		<div class="container"  style="background-color: black; opacity: 0.90; margin-bottom: 20px;">
+        <h1>THE FIRST LUTHERAN CONGREGATION</h1>
+		<p> On July 9th, 1882, the first Lutheran pastor arrived from Germany to start a church in Lihue on the island of Kauai. 
+		His name was Freiderich Richter and he brought with him a pre-fabricated church building from Germany. 
+		His primary job was taking care of the many German Lutherans working in the sugar industry. 
+		Lihue Lutheran (a member of the Evangelical Lutheran Church in America - ELCA) is still standing, although the original building has been rebuilt several times due to hurricanes.
+		</p>
+		
+		</br>
+		
+		<h1>THE FIRST LCMS CONGREGATION</h1>
+		<p>Our Redeemer, located on University Avenue across from the University of Hawaii, was birthed in 1945.
+		</p>
+		
+		</br>
+		
+		<h1>OTHER NOTABLE LUTHERAN INFLUENCE</h1>
+		<p>The Royal Hawaiian Band was started in 1836 by King Kamehameha III (the oldest municipal band in the United States.)  
+		In 1872, King Kalakaua appointed Heinrich (Henry) Berger as the bandmaster.  
+		His musical arrangement of "Hymn of Kamehameha I" eventually became the state anthem, "Hawai'i Pono'i" with lyrics by King Kalakaua.  
+		Queen Lili'uokalani named him the "Father of Hawaiian Music."  
+		He worked with Kamehameha Schools to develop its music program and started a group that eventually became the Honolulu Symphony.  
+		He was the first music director at "German Lutheran Church" which later became known as Lutheran Church of Honolulu.  </p>
+	</div>
+	</div>
+
+    </div>
 	
+	<div class="container" style="content-align: center;">
 	<div class="row">
 		<div class="column">
 			<div class="card">
@@ -243,7 +293,8 @@
 			</div>
 		</div>
 		
-		</div>		
+		</div>
+			</div>
 
 </body>
 <script src="js/menu.js"></script>
